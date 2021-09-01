@@ -7,4 +7,116 @@
 
 
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #858970;
+  /* font-family: "Merriweather", serif;
+  font-size: 16px;
+  line-height: 1.6; */
+}
+
+.website {
+  background-color: #fff;
+  max-width: 900px;
+  justify-content: center;
+  margin-top: -4rem;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+}
+
+
+
+/* MENU */
+.menu {
+  background-color: #A8634D;
+  color: #F0E6D7;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu li:last-of-type {
+  margin-right: 0;
+}
+
+
+
+/* DESCRIPTION TEXT AND PHOTO*/
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.description img {
+  border-radius: 10px;
+}
+
+.bibs-rags {
+  flex-direction: row;
+}
+
+.author h2 {
+  text-transform: uppercase;
+}
+
+.inspiring-women h2 {
+  text-transform: uppercase;
+} 
+
+.women h3 {
+  text-transform: uppercase;
+}
+
+.tote-bags h2 {
+  text-transform: uppercase;
+}
+
+.bibs-rags h2 {
+  text-transform: uppercase;
+}
+
+.fairy h2 {
+  text-transform: uppercase;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+}
+
+
+
+/* WOMEN GALLERY */
+.women {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+
+
+/* FAIRY GALLERY */
+.fairy-gallery {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+
+
+/* FOOTER */
+.contact li {
+  display: inline-block;
+  margin-right: 2rem;
+  text-decoration: none;
+}
 
