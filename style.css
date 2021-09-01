@@ -22,7 +22,6 @@ body {
   justify-content: center;
   margin-top: -4rem;
   margin: auto;
-  border-radius: 10px;
   box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
 }
 
@@ -55,8 +54,19 @@ body {
 }
 
 .description img {
-  border-radius: 10px;
+  border-radius: 3%;
 }
+
+
+/* TEST*/
+
+.test {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+
 
 .bibs-rags {
   flex-direction: row;
@@ -88,6 +98,31 @@ body {
 
 .contact h2 {
   text-transform: uppercase;
+}
+
+/* PORTRAIT SQUARE TEST */
+
+.test-text {
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+.square1 {
+  width: 350px;
+  height: 350px;
+  background-color: #A8634D;
+  top: 19rem;
+  right: 3rem;
+  border-radius: 0 3% 3% 0;
+  z-index: 1;
+}
+
+.portrait-img1 {
+  position: relative;
+  top: -20rem;
+  right: -2rem;
+  z-index: 2;
+  border-radius: 3%;
 }
 
 
