@@ -28,9 +28,12 @@ html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #F0E6D7;
   background: #53625B; 
 }
+
+
+
+
 
 
 
@@ -57,19 +60,39 @@ body {
 /* MENU */
 .menu {
   background-color: #A8634D;
-  color: #F0E6D7;
   text-align: center;
+  padding: 1rem;
 }
 
 .menu li {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 5rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+.menu ul {
+  padding: 0;
+}
+
 .menu li:last-of-type {
   margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #F0E6D7;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.menu a:hover{
+  color: #A8634D;
+  background-color: #F0E6D7;
+}
+
+.menu a:focus{
+  color: F0E6D7;
 }
 
 
@@ -259,6 +282,15 @@ body {
   flex-direction: row-reverse;
   border: 1px solid black;
 }
+
+
+.women-text {
+  background-color: #F0E6D7;
+  position: relative;
+  left: -2rem;
+}
+
+
 
 
 /* TOTE BAGS GALLERY */
