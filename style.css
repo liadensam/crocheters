@@ -6,6 +6,33 @@
 
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F0E6D7; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F0E6D7;
+  background: #53625B; 
+}
+
+
 
 body {
   margin: 0;
@@ -31,6 +58,7 @@ body {
 .menu {
   background-color: #A8634D;
   color: #F0E6D7;
+  text-align: center;
 }
 
 .menu li {
@@ -45,8 +73,16 @@ body {
 }
 
 
+/* .headline {
+  background-color: #fff;
+  background-image: linear-gradient(hsla(0 0% 0%/0.3), hsla(0 0% 0%/0.3)),
+    url(img/headline-photo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 
-/* DESCRIPTION TEXT AND PHOTO*/
+
+/* DESCRIPTION TEXT AND PHOTO
 .description {
   display: flex;
   justify-content: center;
@@ -55,18 +91,130 @@ body {
 
 .description img {
   border-radius: 3%;
-}
+} */
 
 
 /* TEST*/
 
-.test {
+.description {
+  height: 350px;
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
+  border: 1px solid black;
 }
 
 
+/* PORTRAIT SQUARE TEST */
+
+.author-text-right {
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+.author-text-left {
+  margin-right: 4rem;
+  margin-top: 1rem;
+}
+
+.square {
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+}
+
+.square-fairy {
+  height: 430px;
+  z-index: 1;
+}
+
+.square-line {
+  z-index: 1;
+  overflow: hidden;
+}
+
+.square1 {
+  background-color: #A8634D;
+  border-radius: 0 3% 3% 0;
+  overflow: hidden;
+}
+
+.square2 {
+  background-color: #53625B;
+  border-radius: 0 3% 3% 0;
+  overflow: hidden;
+}
+
+.square3 {
+  background-color: #A8634D;
+  border-radius: 3% 0 0 3%;
+  overflow: hidden;
+}
+
+.square4 {
+  background-color: #F0E6D7;
+  width: 700px;
+  overflow: hidden;
+}
+
+.square5 {
+  background-color: #A8634D;
+  border-radius: 3% 0 0 3%;
+  width: 700px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.square6 {
+  background-color: #53625B;
+  border-radius: 3% 0 0 3%;
+  width: 700px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.portrait-img1 {
+  position: relative;
+  top: -24rem;
+  right: -2rem;
+  z-index: 2;
+  border-radius: 3%;
+  box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+}
+
+.tote-bag-img {
+  position: relative;
+  top: -20rem;
+  right: -2rem;
+  z-index: 2;
+  border-radius: 3%;
+  box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+}
+
+.bibs-img {
+  position: relative;
+  top: -20rem;
+  right: 2rem;
+  z-index: 2;
+  border-radius: 3%;
+  box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+}
+
+.fairy-gallery img {
+  position: relative;
+  top: -25rem;
+  right: -.5rem;
+  z-index: 2;
+  border-radius: 3%;
+}
+
+.gallery-line img {
+  position: relative;
+  top: -5rem;
+  right: -.5rem;
+  z-index: 2;
+  border-radius: 3%;
+}
 
 .bibs-rags {
   flex-direction: row;
@@ -100,30 +248,6 @@ body {
   text-transform: uppercase;
 }
 
-/* PORTRAIT SQUARE TEST */
-
-.test-text {
-  margin-left: 4rem;
-  margin-top: 1rem;
-}
-
-.square1 {
-  width: 350px;
-  height: 350px;
-  background-color: #A8634D;
-  top: 19rem;
-  right: 3rem;
-  border-radius: 0 3% 3% 0;
-  z-index: 1;
-}
-
-.portrait-img1 {
-  position: relative;
-  top: -20rem;
-  right: -2rem;
-  z-index: 2;
-  border-radius: 3%;
-}
 
 
 
@@ -133,22 +257,69 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
+  border: 1px solid black;
+}
+
+
+/* TOTE BAGS GALLERY */
+.gallery-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-line {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+
+.item-line:hover {
+  opacity: 0;
+  transition: .9s;
 }
 
 
 
-/* FAIRY GALLERY */
+
+
+
+
+/* FAIRY GALLERY  */
+
 .fairy-gallery {
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
+
+.item {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+
+.item:hover {
+  opacity: .5;
+  transition: .9s;
+}
+
+
+
+
 
 
 
 
 /* FOOTER */
+
+.contact ul {
+  background-color: #53625B;
+  color: #F0E6D7;
+}
+
 .contact li {
   display: inline-block;
   margin-right: 2rem;
