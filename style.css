@@ -54,7 +54,8 @@ body {
 }
 
 .website h2, h3 {
-  font-family: "Lustria", serif;
+  
+  font-family: 'Roboto Slab', serif;
   font-weight: lighter;
   letter-spacing: 5px;
 }
@@ -72,8 +73,9 @@ main {
   padding: 1rem;
   margin-bottom: 2.5rem;
   letter-spacing: 1.5px;
-  /* font-family: "Lustria", serif; */
   font-weight: 500;
+  /* position:fixed;
+  z-index: index 3; */
 }
 
 .menu li {
@@ -189,7 +191,7 @@ main {
 
 .square2 {
   background-color: #53625B;
-  border-radius: 0 3% 3% 0;
+  border-radius: 0 10px 10px 0;
   overflow: hidden;
 }
 
@@ -203,11 +205,12 @@ main {
   background-color: #F0E6D7;
   width: 700px;
   overflow: hidden;
+  border-radius: 0 10px 10px 0;
 }
 
 .square5 {
   background-color: #A8634D;
-  border-radius: 3% 0 0 3%;
+  border-radius: 0 10px 10px 0;
   width: 700px;
   height: 100px;
   overflow: hidden;
@@ -215,7 +218,7 @@ main {
 
 .square6 {
   background-color: #53625B;
-  border-radius: 3% 0 0 3%;
+  border-radius: 0 10px 10px 0;
   width: 700px;
   height: 100px;
   overflow: hidden;
@@ -226,7 +229,7 @@ main {
   top: -24rem;
   right: -2rem;
   z-index: 2;
-  border-radius: 3%;
+  border-radius: 10px;
   box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
 }
 
@@ -244,7 +247,7 @@ main {
   top: -20rem;
   right: 2rem;
   z-index: 2;
-  border-radius: 3%;
+  border-radius: 10px;
   box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
 }
 
@@ -253,7 +256,7 @@ main {
   top: -25rem;
   right: -.5rem;
   z-index: 2;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 .gallery-line img {
@@ -448,6 +451,7 @@ footer {
 .contact ul {
   background-color: #53625B;
   color: #F0E6D7;
+
 }
 
 .contact li {
@@ -457,11 +461,6 @@ footer {
   font-size: .8rem;
   padding: .6rem;
 }
-
-.contact li:last-of-type {
-  margin-right: 0;
-}
-
 
 .contact a {
   text-decoration: none;
