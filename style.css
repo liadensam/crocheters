@@ -134,12 +134,19 @@ main {
 
 .description {
   height: 350px;
+  width: auto;
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
   margin-top: 10rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+}
+
+.description p,
+.description h2 {
+  text-align: justify;
+  margin: 2rem;
 }
 
 
@@ -300,7 +307,13 @@ main {
 
 .inspiring-women h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
+
+.inspiring-women img {
+  border-radius: 10px;
+}
+
 
 .women {
   display: flex;
@@ -309,13 +322,49 @@ main {
   flex-direction: row-reverse;
 }
 
+.rosa-parks,
+.audrey-hepburn {
+  margin-left: 2rem;
+}
+
+
+.queen-elizabeth,
+.billie-holiday {
+  flex-direction: row;
+  margin-right: 2rem;
+}
+
 
 .women-text {
   background-color: #F0E6D7;
+  border-radius: 10px;
   position: relative;
   left: -2rem;
+  box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+  font-weight: 600;
+  text-align: justify;
 }
 
+.women-text p {
+  padding: 0 2rem 1rem 2rem;
+  font-size: .8rem;
+}
+
+.women-text h3 {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.queen-elizabeth-text {
+  position: relative;
+  left: 2rem;
+}
+
+.billie-holiday-text {
+  position: relative;
+  left: 2rem;
+}
 
 
 
@@ -333,7 +382,7 @@ main {
 
 
 .item-line:hover {
-  opacity: 0;
+  opacity: .5;
   transition: .9s;
 }
 
@@ -351,6 +400,7 @@ main {
 
 .fairy h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .fairy-gallery {
@@ -380,9 +430,15 @@ main {
 
 
 /* FOOTER */
+
+
+footer {
+  color: #53625B;
+}
+
 .contact {
-  margin-top: 10rem;
   text-align: center;
+  margin-top: 16rem;
 }
 
 .contact h2 {
@@ -396,13 +452,28 @@ main {
 
 .contact li {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 6rem;
   text-decoration: none;
+  font-size: .8rem;
+  padding: .6rem;
+}
+
+.contact li:last-of-type {
+  margin-right: 0;
 }
 
 
-footer {
-    letter-spacing: 1.5px;
-    line-height: 1.5;
-    color: #53625B;
+.contact a {
+  text-decoration: none;
+  color: #F0E6D7;
+}
+
+.contact a:hover{
+  color: #53625B;
+  background-color: #F0E6D7;
+}
+
+.contact a:focus{
+  color: #53625B;
+  background-color: #F0E6D7;
 }
