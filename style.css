@@ -66,8 +66,6 @@ main {
   margin-bottom: 2.5rem;
   letter-spacing: 1.5px;
   font-weight: 500;
-  /* position:fixed;
-  z-index: index 3; */
 }
 
 .menu li {
@@ -101,6 +99,57 @@ main {
   color: #A8634D;
   background-color: #F0E6D7;
 }
+
+
+/* SUBMENU - DROPDOWN */
+
+.dropdown ul {
+  margin-left: 1rem;
+}
+
+.dropdown:hover .other-menu {
+  display: flex;
+  flex-direction: column;
+  color: #F0E6D7;
+  background-color: #A8634D;
+  border-radius: 5px;
+  padding-top: 65px;
+
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  z-index: 1;
+}
+
+.other-menu {                    /* Add this as a new rule */
+  display: none;
+}
+
+.other-menu li {
+  list-style: none;
+  border-bottom: 1px solid #F0E6D7;
+  padding: 0 20px 20px 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.other-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > a {
+  z-index: 2;
+  position: relative;  /* This is important! */
+  cursor: pointer;
+}
+
+
+
+
 
 
 
@@ -480,9 +529,3 @@ footer {
   color: #53625B;
   background-color: #F0E6D7;
 }
-
-/* 
-.contact a:focus {
-  color: #53625B;
-  background-color: #F0E6D7;
-} */
