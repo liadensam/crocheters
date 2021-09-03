@@ -537,6 +537,7 @@ footer {
 
 /* MEDIA QUERIES */
 
+
 @media screen and (max-width: 700px) {
   .menu li {
     display: flex;
@@ -616,6 +617,20 @@ footer {
   .women img {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .contact li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: .8rem;
+    margin-right: 0;
+    padding: .1rem;
+  }
+
+  .contact ul {
+    padding: 0;
   }
 
 }
