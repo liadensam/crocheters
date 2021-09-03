@@ -53,16 +53,10 @@ body {
   box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
 }
 
-.website h2, h3 {
-  
-  font-family: 'Roboto Slab', serif;
-  font-weight: lighter;
-  letter-spacing: 5px;
-}
 
 main {
   letter-spacing: 1.5px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #53625B;
 }
 
@@ -111,28 +105,8 @@ main {
 }
 
 
-/* .headline {
-  background-color: #fff;
-  background-image: linear-gradient(hsla(0 0% 0%/0.3), hsla(0 0% 0%/0.3)),
-    url(img/headline-photo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 
-
-/* DESCRIPTION TEXT AND PHOTO
-.description {
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-}
-
-.description img {
-  border-radius: 3%;
-} */
-
-
-/* TEST*/
+/* DESCRIPTION TEXTS*/
 
 .description {
   height: 350px;
@@ -140,32 +114,52 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
-  margin-top: 10rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: .8rem;
 }
 
 .description p,
 .description h2 {
   text-align: justify;
-  margin: 2rem;
+  margin-right: 6rem;
+  margin-left: 4rem;
+}
+
+.website h2, h3 {
+  
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 5px;
 }
 
 
-
-/* PORTRAIT SQUARE TEST */
-
 .author-text-right {
-  margin-left: 4rem;
-  margin-top: 1rem;
+  margin-top: 5.5rem;
 }
 
 .author-text-left {
-  margin-right: 4rem;
-  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-top: 5.5rem;
+  text-align: left;
+}
+
+.author-text-left h2 {
   text-align: right;
 }
 
+.author {
+  margin-top: 10rem;
+}
+
+.bibs-rags {
+  margin-top: 7rem;
+}
+
+.tote-bags {
+  margin-top: 12rem;
+}
+
+/* PORTRAIT SQUARE */
 .square {
   width: 350px;
   height: 350px;
@@ -327,14 +321,14 @@ main {
 
 .rosa-parks,
 .audrey-hepburn {
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 
 .queen-elizabeth,
 .billie-holiday {
   flex-direction: row;
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 
@@ -343,6 +337,7 @@ main {
   border-radius: 10px;
   position: relative;
   left: -2rem;
+  width: 400px;
   box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
   font-weight: 600;
   text-align: justify;
@@ -351,6 +346,7 @@ main {
 .women-text p {
   padding: 0 2rem 1rem 2rem;
   font-size: .8rem;
+  letter-spacing: normal;
 }
 
 .women-text h3 {
@@ -467,12 +463,12 @@ footer {
   color: #F0E6D7;
 }
 
-.contact a:hover{
+.contact a:hover {
   color: #53625B;
   background-color: #F0E6D7;
 }
-
-.contact a:focus{
+/* 
+.contact a:focus {
   color: #53625B;
   background-color: #F0E6D7;
-}
+} */
