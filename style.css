@@ -566,6 +566,32 @@ footer {
     flex-direction: column-reverse;
   }
 
+  .description p,
+  .description h2 {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+  }
+  
+
+  .author-text-right {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+
+  .author-text-left {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  
+
+
+
+
+
+
+
   .author {
     margin-top: 14rem;
   }
@@ -605,7 +631,8 @@ footer {
   }
 
   .inspiring-women h2 {
-    margin-bottom: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .women {
@@ -617,6 +644,37 @@ footer {
   .women img {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .women-text {
+    width: 350px;
+    box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+    font-weight: 600;
+    text-align: justify;
+  }
+
+  .gallery-line {
+    flex-direction: column;
+  }
+  
+
+
+
+    /* .fairy-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .responsive {
+    width: 260px;
+    height: 260px;
+  } */
+
+  .fairy {
+    display: none;
   }
 
   .contact li {
@@ -633,7 +691,14 @@ footer {
     padding: 0;
   }
 
+
+  .contact {
+    margin-top: 2rem;
+  }
+
 }
+
+
 
 
 
@@ -646,9 +711,3 @@ footer {
 }
   
 
-  /* .fairy-gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
