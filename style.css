@@ -121,7 +121,7 @@ main {
   z-index: 1;
 }
 
-.other-menu {                    /* Add this as a new rule */
+.other-menu {
   display: none;
 }
 
@@ -144,14 +144,15 @@ main {
 
 .dropdown > a {
   z-index: 2;
-  position: relative;  /* This is important! */
-  cursor: pointer;
+  position: relative;
 }
 
 
 
-
-
+/* HEADLINE PHOTO*/
+.headline {
+  overflow: hidden;
+}
 
 
 /* DESCRIPTION TEXTS*/
@@ -530,3 +531,109 @@ footer {
   color: #53625B;
   background-color: #F0E6D7;
 }
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+  .menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .dropdown:hover .other-menu{
+    display: none;
+  }
+
+  header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .headline {
+    display: none;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .author {
+    margin-top: 14rem;
+  }
+
+  .tote-bags {
+    margin-top: 20rem;
+  }
+
+  .bibs-rags {
+    margin-top: 11rem;
+  }
+  
+  .square3 {
+    border-radius: 0 3% 3% 0;
+  }
+
+  .bibs-img {
+    position: relative;
+    top: -20rem;
+    right: -2rem;
+  }
+  
+  .author-text-left h2 {
+    text-align: left;
+  }
+
+  .author-text-left {
+    margin-left: 0;
+  }
+
+  .author-text {
+    margin-top: 3rem;
+  }
+
+  .inspiring-women {
+    margin-top: 15rem;
+  }
+
+  .inspiring-women h2 {
+    margin-bottom: 0;
+  }
+
+  .women {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .women img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+  header .logo {
+    display: none;
+  }
+}
+  
+
+  /* .fairy-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
