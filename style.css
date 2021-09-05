@@ -49,6 +49,7 @@ body {
   margin-top: -4rem;
   margin: auto;
   box-shadow: 1px 1px 19px -2px rgba(0, 0, 0, 0.39);
+  overflow: hidden;
 }
 
 
@@ -149,12 +150,6 @@ main {
 
 
 
-/* HEADLINE PHOTO*/
-.headline {
-  overflow: hidden;
-}
-
-
 /* DESCRIPTION TEXTS*/
 
 .description {
@@ -222,33 +217,28 @@ main {
 
 .square-line {
   z-index: 1;
-  overflow: hidden;
   margin-top: 10rem;
 }
 
 .square1 {
   background-color: #A8634D;
   border-radius: 0 3% 3% 0;
-  overflow: hidden;
 }
 
 .square2 {
   background-color: #53625B;
   border-radius: 0 10px 10px 0;
-  overflow: hidden;
 }
 
 .square3 {
   background-color: #A8634D;
   border-radius: 3% 0 0 3%;
-  overflow: hidden;
 }
 
 .square4 {
   background-color: #F0E6D7;
   width: 700px;
   height: 480px;
-  overflow: hidden;
   border-radius: 0 10px 10px 0;
 }
 
@@ -257,7 +247,6 @@ main {
   border-radius: 0 10px 10px 0;
   width: 700px;
   height: 100px;
-  overflow: hidden;
 }
 
 .square6 {
@@ -265,7 +254,6 @@ main {
   border-radius: 0 10px 10px 0;
   width: 700px;
   height: 100px;
-  overflow: hidden;
 }
 
 .portrait-img1 {
