@@ -247,7 +247,7 @@ main {
 .square4 {
   background-color: #F0E6D7;
   width: 700px;
-  height: 560px;
+  height: 480px;
   overflow: hidden;
   border-radius: 0 10px 10px 0;
 }
@@ -297,6 +297,9 @@ main {
 
 .fairy-gallery img {
   position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -312,34 +315,15 @@ main {
   flex-direction: row;
 }
 
-.author h2 {
-  text-transform: uppercase;
-}
-
-.inspiring-women h2 {
-  text-transform: uppercase;
-} 
-
-.women h3 {
-  text-transform: uppercase;
-}
-
-.tote-bags h2 {
-  text-transform: uppercase;
-}
-
-.bibs-rags h2 {
-  text-transform: uppercase;
-}
-
-.fairy h2 {
-  text-transform: uppercase;
-}
-
+.author h2,
+.inspiring-women h2,
+.women h3,
+.tote-bags h2,
+.bibs-rags h2,
+.fairy h2,
 .contact h2 {
   text-transform: uppercase;
 }
-
 
 
 
@@ -402,16 +386,11 @@ main {
   font-size: 1rem;
 }
 
-.queen-elizabeth-text {
-  position: relative;
-  left: 2rem;
-}
-
+.queen-elizabeth-text,
 .billie-holiday-text {
   position: relative;
   left: 2rem;
 }
-
 
 
 
@@ -447,31 +426,23 @@ main {
 
 .fairy-gallery {
   display: grid;
-  max-width: 804px;
-  max-height: 560px;
-  width: 100%;
-  margin: 0 48px 0 48px;
+  margin-right: 2.8rem;
+  margin-left: 2.8rem;
   position: relative;
-  top: -32rem;
+  max-height: 560px;
+  top: -27rem;
   grid-template-columns: 1fr 0.9fr 1.1fr;
-  grid-template-rows: 1.2fr 0.5fr 0.4fr 1.9fr;
+  grid-template-rows: 1.2fr 0.3fr 0.2fr 2.3fr;
   gap: 16px 16px;
-  grid-template-areas: "fairy-foto1 fairy-foto1 fairy-foto2"
+  grid-template-areas:
+    "fairy-foto1 fairy-foto1 fairy-foto2"
     "fairy-foto1 fairy-foto1 fairy-foto2"
     "fairy-foto1 fairy-foto1 fairy-foto5"
     "fairy-foto3 fairy-foto4 fairy-foto5";
-}
-
-.fairy-foto1 {
-  grid-area: fairy-foto1;
-}
-
-.fairy-foto2 {
-  grid-area: fairy-foto2;
-}
-
-.fairy-foto3 {
-  grid-area: fairy-foto3;
+  justify-content: center;
+  align-content: stretch;
+  justify-items: center;
+  align-items: center;
 }
 
 .fairy-foto4 {
@@ -480,6 +451,18 @@ main {
 
 .fairy-foto5 {
   grid-area: fairy-foto5;
+}
+
+.fairy-foto2 {
+  grid-area: fairy-foto2;
+}
+
+.fairy-foto1 {
+  grid-area: fairy-foto1;
+}
+
+.fairy-foto3 {
+  grid-area: fairy-foto3;
 }
 
 .item:hover {
@@ -545,7 +528,9 @@ footer {
     justify-content: center;
     text-align: center;
     margin-right: 0;
+    border-bottom: 1px solid #F0E6D7;
   }
+
 
   .dropdown:hover .other-menu{
     display: none;
@@ -608,6 +593,11 @@ footer {
     border-radius: 0 3% 3% 0;
   }
 
+  .square4 {
+    width: 700px;
+    height: 100px;
+  }
+
   .bibs-img {
     position: relative;
     top: -20rem;
@@ -656,9 +646,61 @@ footer {
   .gallery-line {
     flex-direction: column;
   }
+
+  .fairy {
+    margin-top: 2.5rem;
+    height: 900px;
+  }
   
+  .fairy-gallery {
+    display: grid;
+    max-height: 900px;
+    top: -4rem;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px 16px;
+    grid-template-areas: "fairy-foto1"
+    "fairy-foto2"
+    "fairy-foto3";
+    justify-content: center;
+    align-content: stretch;
+    justify-items: center;
+    align-items: center;
+    }
 
+    .fairy-foto1 {
+      grid-area: fairy-foto1;
+    }
 
+    .fairy-foto2 {
+      grid-area: fairy-foto2;
+    }
+
+    .fairy-foto3 {
+      grid-area: fairy-foto3;
+    }
+
+    .fairy-foto4 {
+      display: none;
+    }
+
+    .fairy-foto5 {
+      display: none;
+    }
+
+  .fairy-gallery img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+   /* .responsive {
+     width: 260px;
+     height: 260px;
+   } */
 
     /* .fairy-gallery {
     display: flex;
@@ -667,15 +709,14 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .responsive {
     width: 260px;
     height: 260px;
-  } */
-
-  .fairy {
+  } 
+   .fairy {
     display: none;
-  }
+  } 
+ */
 
   .contact li {
     display: flex;
@@ -693,7 +734,7 @@ footer {
 
 
   .contact {
-    margin-top: 2rem;
+    margin-top: 7rem;
   }
 
 }
@@ -710,4 +751,3 @@ footer {
   }
 }
   
-
