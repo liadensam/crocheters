@@ -102,51 +102,6 @@ main {
   background-color: #f0e6d7;
 }
 
-/* SUBMENU - DROPDOWN */
-
-.dropdown ul {
-  margin-left: 1rem;
-}
-
-.dropdown:hover .other-menu {
-  display: flex;
-  flex-direction: column;
-  color: #f0e6d7;
-  background-color: #a8634d;
-  border-radius: 3px;
-  padding-top: 65px;
-
-  position: absolute;
-  top: -25px;
-  left: -20px;
-  z-index: 1;
-}
-
-.other-menu {
-  display: none;
-}
-
-.other-menu li {
-  list-style: none;
-  border-bottom: 1px solid #f0e6d7;
-  padding: 0 20px 20px 20px;
-  margin: 10px;
-  text-align: center;
-}
-
-.other-menu li:last-of-type {
-  border-bottom: none;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown > a {
-  z-index: 2;
-  position: relative;
-}
-
 /* DESCRIPTION TEXTS*/
 
 .description {
