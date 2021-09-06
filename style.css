@@ -41,7 +41,7 @@ body {
   padding: 0;
   background-color: #858970;
   font-family: "Montserrat", Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .website {
@@ -100,6 +100,49 @@ main {
 .menu a:focus {
   color: #a8634d;
   background-color: #f0e6d7;
+}
+
+/* SUBMENU - DROPDOWN */
+
+.dropdown:hover .other-menu {
+  display: flex;
+  flex-direction: column;
+  color: #f0e6d7;
+  background-color: #a8634d;
+  padding-top: 65px;
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  z-index: 1;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.other-menu li {
+  list-style: none;
+  border-bottom: 1px solid #f0e6d7;
+  padding: 0 20px 20px 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.other-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown ul {
+  margin-left: 1rem;
+}
+
+.other-menu {
+  display: none;
+}
+
+.dropdown span a {
+  z-index: 2;
+  position: relative;
 }
 
 /* DESCRIPTION TEXTS*/
