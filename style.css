@@ -104,7 +104,7 @@ main {
 
 /* SUBMENU - DROPDOWN */
 
-.dropdown:hover .other-menu {
+/* .dropdown:hover .other-menu {
   display: flex;
   flex-direction: column;
   color: #f0e6d7;
@@ -143,7 +143,7 @@ main {
 .dropdown span a {
   z-index: 2;
   position: relative;
-}
+} */
 
 /* DESCRIPTION TEXTS*/
 
